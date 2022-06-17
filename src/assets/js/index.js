@@ -10,13 +10,13 @@ fibo.addEventListener('click', function(e) {
 })
 
 dados.addEventListener('click', function(e) {
-    window.location.assign('../../https/Fibonacci/fibonacci.html') 
+    window.location.assign('../../https/AnaliseDeDados/dados.html') 
 })
 
 percentual.addEventListener('click', function(e) {
-    window.location.assign('../../https/Fibonacci/fibonacci.html') 
+    window.location.assign('../../https/PercentualDeRepresentacao/percentualDeRepresentacao.html') 
 })
 
 string.addEventListener('click', function(e) {
-    window.location.assign('../../https/Fobonacci/fibonacci.html') 
+    window.location.assign('../../https/InversorDeString/inversorDeString.html') 
 })
