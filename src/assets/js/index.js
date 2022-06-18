@@ -3,7 +3,7 @@
 const fibo = document.querySelector('.fibonacci')
 const dados = document.querySelector('.data')
 const percentual = document.querySelector('.percentual')
-const string = document.querySelector('.string')
+const string = document.querySelector('.text')
 
 fibo.addEventListener('click', function(e) {
     window.location.assign('../../https/Fibonacci/fibonacci.html') 
