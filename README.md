@@ -1,1 +1,1 @@
-Pode acessar o site clicando <a href="https://analiseedesenvolvimento.vercel.app/index.html" target="_blank">AQUI</a>
+Pode acessar o site clicando <a href="https://analiseedesenvolvimento.vercel.app/index.html" target="blank">AQUI</a>
