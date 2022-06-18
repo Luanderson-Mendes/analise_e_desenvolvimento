@@ -20,10 +20,20 @@
 
         <section class="form-container">
             <h1 class="dados">Análise de Dados</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, delectus. Voluptatem reprehenderit, fuga eos nam pariatur ducimus laudantium molestiae nobis mollitia animi eaque asperiores iure perspiciatis sequi ad. Magnam, asperiores?</p>
+            <p>O programa faz uma análise dos dados presentes no faturamento diário de uma distribuidora, ele filtra e apresenta uma tabela de acordo com o solicitado pelo usuário.</p>
+            <p>Para exibir a tabela selecione uma opção e clique em buscar</p>
             <div class="tabela-dados">
-                <div class="form-container selectors">
-                    <form action="" id="formulario">
+                <div class="form-container selectors ">
+                    <form action="/" id="formulario" class="radio-options">
+                        <input class="radio" type="radio" name="opcao" id="total-table" value="total-table" checked>
+                        <p>Tabela Completa</p>
+                        <input class="radio" type="radio" name="opcao" id="max-value" value="max-value">
+                        <p>Maior Valor</p>
+                        <input class="radio" type="radio" name="opcao" id="min-value" value="min-value">
+                        <p>Menor Valor</p>
+                        <input class="radio" type="radio" name="opcao" id="higher-media" value="higher-media">
+                        <p>Quantidade de dias que o valor foi maior que a media mensal</p>
+                        <button class="data-button" type="submit">Buscar</button>
                     </form>
                 </div>
                 <div class="table"></div>
