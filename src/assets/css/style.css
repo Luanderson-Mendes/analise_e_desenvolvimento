@@ -183,6 +183,7 @@ footer .content .social-media {
 
 section .form-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   max-width: 640px;
 }
@@ -269,4 +270,34 @@ form button:hover {
 
 .menu .nav a:hover{
   color: var(--fourth-topic-color);
+}
+
+.tabela-dados{
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectors {
+  width: 50%;
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 50%;
+}
+
+table th, td {
+  font-size: 0.9em;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid var(--second-topic-color);
+}
+
+table th {
+  width: 50%;
 }
