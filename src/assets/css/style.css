@@ -153,7 +153,7 @@ footer .content li{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: url("/src/assets/img/profile.png") no-repeat;
+  background: url("../img/profile.png") no-repeat;
   background-size: cover;
 }
 
