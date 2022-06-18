@@ -1,4 +1,4 @@
-const dados = fetch('../data/dados.js')
+const dados = fetch('../../assets/data/dados.json')
 const divTable = document.querySelector('.table') 
 
 console.log(dados)
