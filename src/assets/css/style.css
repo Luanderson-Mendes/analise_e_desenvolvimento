@@ -98,7 +98,7 @@ section .main-topic .topic .fibonacci .topic-title{
   grid-area: f;
   background: var(--first-topic-color);
 }
-section .main-topic .topic .dados .topic-title{
+section .main-topic .topic .data .topic-title{
   grid-area: d;
   background: var(--second-topic-color);
 }
