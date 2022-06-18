@@ -1,7 +1,7 @@
 
 
 const fibo = document.querySelector('.fibonacci')
-const dados = document.querySelector('.dados')
+const dados = document.querySelector('.data')
 const percentual = document.querySelector('.percentual')
 const string = document.querySelector('.string')
 
