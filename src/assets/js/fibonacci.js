@@ -44,16 +44,17 @@ function criaP () {
 }
 
 function criaH3(number){
-    const seqienciaFibo = document.querySelector('#sequencia-fibo')
-    seqienciaFibo.innerHTML = ''
+    const sequenciaFibo = document.querySelector('#sequencia-fibo')
+    sequenciaFibo.innerHTML = ''
     const h3 = document.createElement('h3')
     const fib = [0,1]
     for (let i = 2; i <= number+1; i++){
         fib[i] = fib[i-1] + fib[i-2]
-    }  
+    }
+
 
     h3.innerHTML = fib.join(' ')
-    seqienciaFibo.appendChild(h3) 
+    sequenciaFibo.appendChild(h3)
 }
 
 function setResultado (msg, isValid) {
