@@ -106,7 +106,7 @@ section .main-topic .topic .percentual .topic-title{
   grid-area: p;
   background: var(--third-topic-color);
 }
-section .main-topic .topic .string .topic-title{
+section .main-topic .topic .text .topic-title{
   grid-area: s;
   background: var(--fourth-topic-color);
 }
