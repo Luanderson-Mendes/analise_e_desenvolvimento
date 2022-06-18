@@ -9,6 +9,24 @@
 </head>
 <body>
     <section id="container">
+        <section class="menu">
+            <ul class="nav">
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/https/AnaliseDeDados/dados.html">Análise de Dados</a></li>
+                <li><a href="/src/https/PercentualDeRepresentacao/percentualDeRepresentacao.html">Percentual de Representação</a></li>
+                <li><a href="/src/https/InversorDeString/inversorDeString.html">Inversor de String</a></li>
+            </ul>
+        </section>
+        <section class="form-container">
+            <h1 class="fibo">Sequência de Fibonacci</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequuntur alias quaerat libero. Consequatur, fuga distinctio in iste eum tempore, voluptatem vel temporibus molestias quasi voluptatum, provident ipsum architecto odit.</p>
+            <form action="/" id="formulario" method="post">
+                <label class="fibo" for="peso">Insira um numero</label><input type="text" id="numero" name="numero">
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="sequencia-fibo"></div>
+            <div id="resultado"></div>
+        </section>
         <footer>
             <ul class="content">
                 <li><div class="profile"></div></li>
@@ -20,7 +38,9 @@
                 <li><p>Site criado por Luanderson Mendes para teste de vaga de estágio da Empresa</p>
                     <a href="https://targetsistemas.com.br" target="_blank"><img src="../../assets/img/target.svg" class="logo-target" alt="Logo da empresa Target Sistemas"></a></li>
             </ul>
-        </footer>  
+        </footer> 
+        
+        <script src="/src/assets/js/fibonacci.js"></script>
     </section>
 </body>
 </html>

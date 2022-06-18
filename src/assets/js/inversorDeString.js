@@ -37,6 +37,7 @@ function setResultado (msg, isValid) {
     if (isValid) {
         h4.innerHTML = "Texto Invertido"
         resultado.appendChild(h4)
+        h4.classList.add('string')
         p.classList.add('paragrafo-resultado')
     } else {
         p.classList.add('bad')

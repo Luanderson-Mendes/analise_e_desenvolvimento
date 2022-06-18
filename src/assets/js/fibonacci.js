@@ -1,3 +1,27 @@
+const fibo = document.querySelector('#formulario')
+
+fibo.addEventListener('submit', function(e){
+    e.preventDefault()
+    const inputValor = e.target.querySelector('#numero')
+    const valor = Number(inputValor.value)
+
+    if(!valor){
+        setResultado('Insira um numero válido!', false)
+        return
+    }
+
+    const valorFibo = fibonacci(valor)
+
+    if (valorFibo){
+        setResultado(`${valor} pertence a sequência de Fibonacci`, true)
+    }else {
+        setResultado(`${valor} não pertence a sequência de Fibonacci`, false)
+    }  
+
+    criaH3(valor)
+
+})
+
 function fibonacci(number) {
 
     //verifica se o numero pertence a sequência de Fibonacci
@@ -9,14 +33,45 @@ function fibonacci(number) {
         return isPerfectSquare (5 * number * number + 4) || isPerfectSquare(5 * number * number - 4)     
     }
 
-    // calcula e cria a sequência de Fibonacci 
+    let isFibo
+    isFibonacci(number) ? isFibo = true : isFibo = false
+    return isFibo
+}
+
+function criaP () {
+    const p = document.createElement('p')
+    return p
+}
+
+function criaH3(number){
+    const seqienciaFibo = document.querySelector('#sequencia-fibo')
+    seqienciaFibo.innerHTML = ''
+    const h3 = document.createElement('h3')
     const fib = [0,1]
     for (let i = 2; i <= number+1; i++){
         fib[i] = fib[i-1] + fib[i-2]
-    }
+    }  
 
-    console.log(fib)
-    isFibonacci(number) ? console.log(number + ' pertence a sequência de fibonacci') : console.log(number + ' não pertence a sequência fibonacci')
+    h3.innerHTML = fib.join(' ')
+    seqienciaFibo.appendChild(h3) 
 }
 
-fibonacci(4)
+function setResultado (msg, isValid) {
+    
+    const resultado = document.querySelector('#resultado')
+    resultado.innerHTML = ''
+
+    const p = criaP()
+    
+
+    if (isValid) {
+        p.classList.add('paragrafo-resultado')
+    }else {
+        p.classList.add('bad')
+    }
+
+    p.innerHTML = msg;
+    resultado.appendChild(p)
+    
+}
+

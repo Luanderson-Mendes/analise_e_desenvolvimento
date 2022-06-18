@@ -192,8 +192,20 @@ section .form-container label {
   font-weight: bold;
 }
 
-section .form-container h1, h4, label {
+.string {
   color: var(--fourth-topic-color);
+}
+
+.fibo {
+  color: var(--first-topic-color);
+}
+
+.dados {
+  color: var(--second-topic-color);
+}
+
+.percent {
+  color: var(--third-topic-color);
 }
 
 section .form-container h1, h4, p {
@@ -234,15 +246,27 @@ form button:hover {
 }
 
 .menu {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #e4e4e4;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu ul li{
-  max-width: 120px;
+  padding: 0 10px;
 }
 
 .menu .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.menu .nav a{
+  color: #555;;
+}
+
+.menu .nav a:hover{
+  color: var(--fourth-topic-color);
 }
